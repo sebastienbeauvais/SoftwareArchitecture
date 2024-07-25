@@ -3,7 +3,7 @@ using BookStore.Business.Interfaces;
 using BookStore.Business;
 using BookStore.DataAccess;
 
-namespace Bookstore.Presentation
+namespace BookStore.Presentation
 {
     class Program
     {
