@@ -1,11 +1,21 @@
 ﻿using System;
-namespace BookStore.DataAccess.Models
+using BookStore.DataAccess.Interfaces;
+using BookStore.DataAccess.Models;
+
+namespace BookStore.DataAccess.Repositories
 {
-	public class BookRepository
+	public class BookRepository : IBookRepository
 	{
-		public BookRepository()
+        private static List<Book> _books = new List<Book>();
+
+        public IEnumerable<Book> GetAllBooks()
 		{
-			//TODO
+			return _books;
+		}
+		public void AddBook(Book book)
+		{
+			book.Id = _books.Any() ? _books.Max(x => x.Id) + 1 : 1;
+			_books.Add(book);
 		}
 	}
 }
