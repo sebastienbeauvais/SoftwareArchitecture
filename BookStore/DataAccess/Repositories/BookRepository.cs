@@ -1,6 +1,8 @@
 ﻿using System;
 using BookStore.DataAccess.Interfaces;
-namespace BookStore.DataAccess.Models
+using BookStore.DataAccess.Models;
+
+namespace BookStore.DataAccess.Repositories
 {
 	public class BookRepository : IBookRepository
 	{
