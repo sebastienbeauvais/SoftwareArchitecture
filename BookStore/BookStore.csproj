@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -16,5 +16,8 @@
     <Folder Include="Business\" />
     <Folder Include="DataAccess\" />
     <Folder Include="Presentation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.70" />
   </ItemGroup>
 </Project>
